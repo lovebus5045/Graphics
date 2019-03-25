@@ -45,35 +45,31 @@ public class DrawingPanel extends JPanel {
 		this.CurrentTool.draw(graphics);
 
 	}
-	
+
 	private void moveShape(int x, int y) {
 		Graphics graphics = this.getGraphics();
 		graphics.setXORMode(getBackground());
-		
+
 		this.CurrentTool.draw(graphics);
 		this.CurrentTool.setPoint(x, y);
 		this.CurrentTool.draw(graphics);
-		
-		//점선이 됐다가 실선이 되게 해라
-	    
-	
+
+		// 점선이 됐다가 실선이 되게 해라
 
 	}
 
 	private class MouseHandler implements MouseListener, MouseMotionListener {
-	
 
 		@Override
 		public void mouseClicked(MouseEvent e) {
-               //click move click move하다가 끝내고 싶을때 끝내야한다.
-			//여기서 더블클릭을 확인해야한다.
-		} 
+			// click move click move하다가 끝내고 싶을때 끝내야한다.
+			// 여기서 더블클릭을 확인해야한다.
+		}
 
 		@Override
 		public void mousePressed(MouseEvent e) {
 			// 다음시간에는 polygon을 그려와라
-		
-			
+
 			drawShape(e.getX(), e.getY());
 
 		}
@@ -87,15 +83,12 @@ public class DrawingPanel extends JPanel {
 		public void mouseDragged(MouseEvent e) {// 여기서 지운다
 
 			moveShape(e.getX(), e.getY());
-		
-
-
 
 		}
 
 		@Override
 		public void mouseMoved(MouseEvent e) {
-//여기
+			// 여기
 		}
 
 		@Override
@@ -107,4 +100,5 @@ public class DrawingPanel extends JPanel {
 		}
 	}
 
+	
 }

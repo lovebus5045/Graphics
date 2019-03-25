@@ -20,6 +20,7 @@ public class ToolBar extends JToolBar {
 		this.drawingPanel = drawingPanel;
 	}
 
+	
 	public ToolBar() {
 		this.buttons = new Vector<JButton>();
 		ActionHandler actionHandler = new ActionHandler();

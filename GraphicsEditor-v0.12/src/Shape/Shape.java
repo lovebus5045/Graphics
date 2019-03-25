@@ -13,6 +13,7 @@ public abstract class Shape {
 		this.x2 = x;
 		this.y2 = y;
 		
+		
 	}
 	
 	public void setPoint(int x, int y) {

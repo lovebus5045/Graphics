@@ -18,3 +18,4 @@ public class FileMenu extends JMenu {
 		this.add(newItem);
 	}	
 }
+

@@ -16,6 +16,7 @@ public class MainFrame extends JFrame {
 	private ToolBar toolBar;
     private DrawingPanel drawingPanel;
     
+    
 	public MainFrame() {
 		// constructor
         //attribute

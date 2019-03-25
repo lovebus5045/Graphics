@@ -20,6 +20,7 @@ public class MenuBar extends JMenuBar {
 		this.fileMenu = new FileMenu(EMenu.fileMenu.getText());
 		this.add(this.fileMenu);
 
+		
 		// 메뉴를 하나 만들면 2줄씩 추가해주어야한다.
 		// 현재 누르면 작동을 안하는데 class를 분리해서 독립적으로 작동하게 만들어야한다.
 	}
